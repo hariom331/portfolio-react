@@ -1,15 +1,19 @@
 import './App.css';
-import Navbar from './component/Navbar/Navbar';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate
+} from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from './component/Header';
 function App() {
   return (
-    <>
-    <div className="main">
-
-    <Navbar/>
-    </div>
-    </>
+    <Router>
+      <div className="App">
+        <Header />
+      </div>
+    </Router>
   );
 }
 
